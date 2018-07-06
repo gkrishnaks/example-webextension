@@ -5,10 +5,11 @@ if (process.env.COVERALLS_REPO_TOKEN) {
 
 module.exports = function(config) {
   config.set({
-    singleRun: true,
-    browsers: ["Firefox"],
+    singleRun: false,
+    browsers: ["Firefox","Chrome"],
     frameworks: ["mocha"],
     reporters,
+    
     coverageReporter: {
       dir: "build/coverage",
       reporters: [
@@ -36,9 +37,10 @@ module.exports = function(config) {
     plugins: [
       "karma-coveralls",
       "karma-coverage",
-      "karma-firefox-launcher",
+      "karma-chrome-launcher",
       "karma-mocha",
-      "karma-mocha-reporter"
+      "karma-mocha-reporter",
+      "karma-firefox-launcher",
     ]
   });
 };
