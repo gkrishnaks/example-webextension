@@ -62,7 +62,8 @@
     "test:karma_BASH": "NODE_ENV=test karma start",
     "test:karma_Windows": "SET NODE_ENV=test & karma start karma.conf.js --auto-watch",
     "test:func": "export FIREFOX_BINARY=${FIREFOX_BINARY:-beta} && npm run bundle && XPI_NAME=dist/example_webextension-0.0.1.zip mocha test/functional/",
-    "test:chrome" : "node ./chrome.js && mocha test/functional/*.js",
+    "test:chrome" : "node ./chrome.js && mocha test/functional/",
+   "virtualenv-postinstall": "virtualenv-postinstall"
+  },
   "license": "MPL-2.0"
-}
 }
