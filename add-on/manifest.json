@@ -11,12 +11,11 @@
   "browser_action": {
     "browser_style": true,
     "default_icon": "img/firefox-logo.svg",
-    "default_title": "__MSG_buttonTitle__"
+    "default_title": "hello"
   },
 
-  "default_locale": "en-US",
 
-  "description": "__MSG_extensionDescription__",
+  "description": "just a test",
 
   "manifest_version": 2,
 
